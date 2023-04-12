@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/et_Id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp" />
+
+    <EditText
+        android:id="@+id/et_Id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Id"
+        tools:ignore="DuplicateClickableBoundsCheck,DuplicateIds,ExtraText"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/et_Nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_below="@+id/et_Id"
+        android:layout_marginHorizontal="16dp"
+        android:layout_alignParentEnd="true"/>
+
+    <EditText
+        android:id="@+id/et_Nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama"
+        tools:ignore="DuplicateIds" />
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:layout_margin="16dp"
+        android:layout_below="@+id/et_Nama"
+        android:layout_alignParentEnd="true"/>
+
+
+</RelativeLayout>
